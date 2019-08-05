@@ -9,11 +9,10 @@ public class AplicacionListada implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return IMG_APP.resolveFor(actor).isVisible() ? true : false;
+        return IMG_APP.resolveFor(actor).isVisible();
     }
 
     public static AplicacionListada esCorrecta() {
         return new AplicacionListada();
     }
-
 }
